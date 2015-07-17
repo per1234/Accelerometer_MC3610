@@ -6,7 +6,7 @@ MC3610 mc3610_acc = MC3610();
 
 void setup() 
 {
-  	Serial.begin(115200);
+  	Serial.begin(9600);
 	mc3610_acc.start(); 
   	Serial.println("mCube Accelerometer MC3610:");
   	checkRange();
