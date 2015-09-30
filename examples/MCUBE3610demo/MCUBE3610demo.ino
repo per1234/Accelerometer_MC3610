@@ -6,7 +6,7 @@ MC3610 mc3610_acc = MC3610();
 
 void setup() 
 {
-  	Serial.begin(9600);
+  	Serial.begin(115200);
 	mc3610_acc.start(); 
   	Serial.println("mCube Accelerometer MC3610:");
   	checkRange();
@@ -46,13 +46,13 @@ void checkSamplingRate()
 {
 	switch(mc3610_acc.GetCWakeSampleRate())
 	{
-		MC3610_CWAKE_SR_DEFAULT_50Hz:			Serial.println("Output Sampling Rate: 50 Hz"); break;
+		MC3610_CWAKE_SR_DEFAULT_50Hz:		Serial.println("Output Sampling Rate: 50 Hz"); break;
 		MC3610_CWAKE_SR_0p4Hz:                  Serial.println("Output Sampling Rate: 0.4 Hz"); break;
 		MC3610_CWAKE_SR_0p8Hz:                  Serial.println("Output Sampling Rate: 0.8 Hz"); break; 
 		MC3610_CWAKE_SR_2Hz:                    Serial.println("Output Sampling Rate: 2 Hz"); break; 
 		MC3610_CWAKE_SR_6Hz:                    Serial.println("Output Sampling Rate: 6 Hz"); break; 
 		MC3610_CWAKE_SR_13Hz:                   Serial.println("Output Sampling Rate: 13 Hz"); break; 
-		MC3610_CWAKE_SR_25Hz:        			Serial.println("Output Sampling Rate: 25 Hz"); break;	
+		MC3610_CWAKE_SR_25Hz:        		Serial.println("Output Sampling Rate: 25 Hz"); break;	
 		MC3610_CWAKE_SR_50Hz:                   Serial.println("Output Sampling Rate: 50 Hz"); break;
 		MC3610_CWAKE_SR_100Hz:                  Serial.println("Output Sampling Rate: 100 Hz"); break; 
 		MC3610_CWAKE_SR_200Hz:                  Serial.println("Output Sampling Rate: 200 Hz"); break; 
