@@ -146,7 +146,7 @@ mc3610_cwake_sr_t MC3610::GetCWakeSampleRate(void)
 /* Read the data format register to preserve bits */
      uint8_t value;
      value = readRegister8(MC3610_REG_WAKE_C);
-     value &= 0b00000111;
+     value &= 0b00001111;
      return (mc3610_cwake_sr_t) (value);
 }
 
