@@ -46,16 +46,16 @@ void checkSamplingRate()
 {
 	switch(mc3610_acc.GetCWakeSampleRate())
 	{
-		MC3610_CWAKE_SR_DEFAULT_50Hz:		Serial.println("Output Sampling Rate: 50 Hz"); break;
-		MC3610_CWAKE_SR_0p4Hz:                  Serial.println("Output Sampling Rate: 0.4 Hz"); break;
-		MC3610_CWAKE_SR_0p8Hz:                  Serial.println("Output Sampling Rate: 0.8 Hz"); break; 
-		MC3610_CWAKE_SR_2Hz:                    Serial.println("Output Sampling Rate: 2 Hz"); break; 
-		MC3610_CWAKE_SR_6Hz:                    Serial.println("Output Sampling Rate: 6 Hz"); break; 
-		MC3610_CWAKE_SR_13Hz:                   Serial.println("Output Sampling Rate: 13 Hz"); break; 
-		MC3610_CWAKE_SR_25Hz:        		Serial.println("Output Sampling Rate: 25 Hz"); break;	
-		MC3610_CWAKE_SR_50Hz:                   Serial.println("Output Sampling Rate: 50 Hz"); break;
-		MC3610_CWAKE_SR_100Hz:                  Serial.println("Output Sampling Rate: 100 Hz"); break; 
-		MC3610_CWAKE_SR_200Hz:                  Serial.println("Output Sampling Rate: 200 Hz"); break; 
+		case MC3610_CWAKE_SR_DEFAULT_50Hz:	Serial.println("Output Sampling Rate: 50 Hz"); break;
+		case MC3610_CWAKE_SR_0p4Hz:             Serial.println("Output Sampling Rate: 0.4 Hz"); break;
+		case MC3610_CWAKE_SR_0p8Hz:             Serial.println("Output Sampling Rate: 0.8 Hz"); break; 
+		case MC3610_CWAKE_SR_2Hz:               Serial.println("Output Sampling Rate: 2 Hz"); break; 
+		case MC3610_CWAKE_SR_6Hz:               Serial.println("Output Sampling Rate: 6 Hz"); break; 
+		case MC3610_CWAKE_SR_13Hz:              Serial.println("Output Sampling Rate: 13 Hz"); break; 
+		case MC3610_CWAKE_SR_25Hz:        	Serial.println("Output Sampling Rate: 25 Hz"); break;	
+		case MC3610_CWAKE_SR_50Hz:              Serial.println("Output Sampling Rate: 50 Hz"); break;
+		case MC3610_CWAKE_SR_100Hz:             Serial.println("Output Sampling Rate: 100 Hz"); break; 
+		case MC3610_CWAKE_SR_200Hz:             Serial.println("Output Sampling Rate: 200 Hz"); break; 
 		default:                                Serial.println("Output Sampling Rate: 50 Hz"); break;
 	}   
 }  
